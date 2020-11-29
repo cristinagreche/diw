@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>t2pr2cgr</title>
+    <style>
+        h2{
+            background-color: rgb(252, 239, 235);
+            border: 3px solid black;
+            border-style: outset;
+            width: 350px;
+        }
+        .divppal{
+            width: 1000px;
+            height: 60px;
+            background-color: rgb(247, 196, 177);
+            color:rgb(3, 37, 99);
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid rgb(22, 22, 22);
+            margin-bottom: 80px;
+          
+        }
+        .div1{
+            width: 150px;
+            height: 45px;
+            background-color: rgb(248, 149, 113);
+            color:rgb(247, 223, 214);
+            border: 2px solid rgb(22, 22, 22);
+            margin-top: 5px;
+            margin-left: 5px;
+            padding-left: 5px;
+            list-style: none;
+            float: left;
+            display: inline;
+            padding-top: 5px;
+            
+        }
+        .div1:hover{
+            background-color: rgb(247, 223, 214);
+            color: rgb(248, 149, 113);
+          
+        }
+        .div2{
+            width: 230px;
+            height: 45px;
+            background-color: rgb(248, 149, 113);
+            color:rgb(247, 223, 214);
+            border: 2px solid rgb(22, 22, 22);
+            margin-top: 5px;
+            margin-right: 5px;
+            padding-rigth: 5px;
+            list-style: none;
+            float: right;
+            display: inline;
+            padding-top: 5px;
+        }
+       #cajatexto{
+           width: 150px;
+           height: 25px;
+           margin-left: 5px;
+           color: grey;
+           font-size: 15px;
+           border: 1px solid black;
+       
+       }
+       #bottom{
+           width: 40px;
+           height: 30px;
+           background-color: rgb(247, 223,214);
+           color:rgb(248, 149, 113);
+           margin-left:10px;
+    }
+
+        a{
+            color: rgb(247, 223, 214);
+           
+           
+        }
+        a:hover{
+            color: rgb(248, 149, 113);
+        }
+        .paginacion{
+            width: 1200px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        .paginacion a{
+            width: 50px;
+            color: black;
+            float: left;
+            padding: 16px 16px;
+            text-decoration: none;
+        }
+        .paginacion a.active {
+            background-color: rgb(248, 149, 113);
+            color: rgb(247, 223, 214);
+            
+        }
+        .paginacion a:hover{
+            background-color: rgb(247, 223, 214);
+            color: rgb(248, 149, 113);
+        }
+        .btn{
+            margin-left: 15px;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(248, 34, 159);
+            border: 2px;
+            border-radius: 50%;
+            box-shadow: 2px 5px 10px #000;
+            list-style: none;
+            float: left;
+            
+        }
+        
+        .btn i{ /*a los iconos que están dentro del boton les aplico un padding para centrar porque margin=auto a veces no funciona*/
+            padding-top: 4px;
+            padding-left: 0px;
+        }
+
+        .btnlg{
+            width: 80px;
+            height: 40px;
+            background-color: rgb(73, 34, 248);
+            color:white;
+            border: 2px;
+            border-radius: 30%;
+            box-shadow: 2px 5px 5px #000;
+            list-style: none;
+            float: left;
+            margin-left: 30px;
+            margin-top: 0px; /* este margin lo pongo para que se separe del otro botón. Si les pongo en linea no hace falta*/
+            
+        }
+        .btnlg i{ /*a los iconos que están dentro del boton les aplico un padding para centrar porque margin=auto a veces no funciona*/
+            padding-top: 8px;
+            padding-left: 20px;
+        }
+
+        .btncara{
+            width: 40px;
+            height: 40px;
+            background-color: rgb(43, 245, 17);
+            border: 2px;
+            border-radius: 50%;
+            box-shadow: 2px 5px 5px #000;
+            list-style: none;
+            float: left;
+            margin-left: 30px;
+           
+            
+        }
+        .btncara i{ /*a los iconos que están dentro del boton les aplico un padding para centrar porque margin=auto a veces no funciona*/
+            padding-top: 9px;
+            padding-left: 9px;
+        }
+        .btn:hover{
+            color:rgb(248, 34, 159);
+            background-color:rgb(253, 199, 83);
+        }
+        .btnlg:hover{
+            color:rgb(248, 34, 159);
+            background-color:rgb(253, 199, 83);
+        }
+        .btncara:hover{
+            color:rgb(248, 34, 159);
+            background-color:rgb(253, 199, 83);
+        }
+        
+    
+        
+    </style>
+</head>
+<body>
+    <h1>Tema 2 - práctica 2 - Cristina</h1>
+    
+    <h2>Barra de navegación</h2>
+    <nav>
+        <div class=divppal>  
+            <ul>  
+              
+            <div class=div1>
+                <i class="material-icons">home</i>
+                <a href="https://www.facebook.com/" target="_blank">home</a>
+           </div>
+            <div class=div1>
+                <i class="material-icons">info</i>
+                <a href="https://www.facebook.com/" target="_blank">acerca de <del></del></a>
+            </div>
+            <div class=div1>
+                <i class="material-icons">local_post_office</i>
+                <a href="https://www.facebook.com/" target="_blank">contacta</a>
+           </div>
+           <div class=div2>
+                <form >
+                    <input type="text" name="buscar" placeholder="Search" id="cajatexto">
+                    <button id="bottom"><i class="material-icons">pageview</i></button>
+                 </form>
+            </div>    
+            </ul> 
+         </div>
+    </nav>
+    <h2>Paginación</h2>
+
+    <div class="paginacion">
+        <a href="#">&laquo;</a> <!--esto es la fomra de poner >> y que no se lo tome como elemento de etiqueta-->
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+      <h2>Botones</h2>
+      <div class="btn">
+            <a>
+                <i class="material-icons">favorite_border</i>
+            </a>
+        </div>
+        <div class="btnlg">
+            <a>
+                <i class="material-icons">content_cut</i>
+            </a>
+        </div>
+        <div class="btncara">
+            <a>
+                <i class="material-icons">sentiment_satisfied_alt</i>
+            </a>
+        </div>
+</body>
+</html>
+  
+        

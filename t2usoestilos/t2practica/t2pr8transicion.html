@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>t2pr8transición</title>
+    <style>
+        .div1{
+            width: 200px;
+            height: 160px;
+            background-color: rgb(175, 228, 230);
+            border: 2px;
+            border-color: rgb(2, 43, 22);
+            padding-top: 15px;
+            padding-bottom: 10px;
+            position: relative;
+            
+        }
+        .div2{
+            background-color: rgb(11, 76, 78);
+            color:rgb(175, 228, 230);
+            width: 150px;
+            float: right;
+            position: absolute;
+            
+        }
+
+        .div3{
+            width: 10px;
+           
+            background-color: cadetblue;
+            border-color: rgb(231, 246, 247);
+            border-style: outset;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            margin-left: 125px;
+            transition: width 2s;
+           
+            
+        }
+        .div3:hover{
+            width: 50px;
+            
+
+        }
+        .div4{
+            background-color: rgb(11, 76, 78);
+            color:rgb(175, 228, 230);
+            width: 110px;
+            padding-left: 45px;
+            left:20px;
+            position: absolute;
+            
+        }
+        span{
+            float:right;
+        }
+        
+        li a{
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class=div1>
+        <div>
+            <button class=div3><span class="material-icons nav12">more_vert</span></button>
+            <div class=div4>
+                    <li><a>Tema1</a></li>
+                    <li><a>Tema2</a></li>
+                    <li><a>Tema3</a></li>
+                    <li><a>Tema4</a></li>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

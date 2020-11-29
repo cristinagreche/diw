@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Prueba con barra de navegacion y con iconos.</title>
+    <style>
+        .navPrincipal {
+            
+            width: 100%;
+            height: 70px;
+            background-color: rgb(216, 194, 194);
+            border: 2px solid black;
+        }
+
+        .navega {
+            vertical-align: middle;
+            text-align: center;
+            float: left;
+            height: 760px;
+            width: 220px;
+            padding: 10px;
+        }
+
+        .navega button {
+            height: 50px;
+        }
+
+        .buscador {
+            float: right;
+            height: 50px;
+            width: 320px;
+            padding: 7px;
+        }
+
+        .buscador input {
+            height: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            font-size: 1.2em;
+        }
+
+        a:hover {
+            background-color: yellow;
+            font-size: 1.7em;
+            padding: 10px;
+        }
+
+        button:hover>.material-icons{
+            font-size: 2.9em;
+            background-color: yellow;
+        }
+
+        span {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .active{
+            background-color: red;
+            padding: 12px;
+        }
+        .material-icons{
+            font-size: 30px; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navPrincipal">
+        <div class="navega">
+            <button type="button">
+                <span class="material-icons">home</span><a href="#">HOME</a>
+            </button>
+
+        </div>
+        <div class="navega">
+            <a href="#"><span class="material-icons">info</span>ABOUT</a>
+        </div>
+        <div class="navega">
+            <a class="active" href="#"><span class="material-icons">
+                    settings_phone</span>CONTACT</a>
+        </div>
+
+        <div class="buscador">
+
+            <input type="search" placeholder="search">
+            <button type="button"><span class="material-icons">search</span></button>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>

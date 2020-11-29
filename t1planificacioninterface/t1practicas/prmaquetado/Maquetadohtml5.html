@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado</title>
+    <!--<link rel="stylesheet" type="text/css" href="css/zoocgr.css"> -->
+    <style>
+       h1 {
+            font-family: 'arial narrow';
+            text-align:center;
+            background:#440b69;
+            color:#ffc046;
+            border: 2px solid#6668d0;
+        } 
+        h2 {
+            border: 2px solid#6668d0;
+        } 
+        nav a{
+            text-decoration:underline;
+            color:inherit;
+            font-size:14px;
+        } 
+        nav li{
+            display:inline-block;
+            width:10%;
+            padding:5px 10px;
+            background-color:rgb(68, 4, 77);
+            /*border:2px solid rgb(39, 3, 56);*/
+            border-style:outset;
+            text-align:center;
+            color:#fff;
+        }
+        nav li:hover{
+            background-color:#ffc046;
+            color:rgb(71, 7, 124);
+        }
+        body{
+            font-family: sans-serif, Verdana, Tahoma;
+            width: 35 px;
+            background-size: cover;
+            background-image: url(img/crosa2.jpg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-attachment: fixed;
+        }
+        
+        .header {
+            
+            font-family: 'Segoe UI', 'Roboto', Oxygen, 'Ubuntu', Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:#6668d0;
+            width: 100%;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+        section {
+            float: left;
+            width: 60%;
+            background-color: rgba(255,192,70, 0.2);
+            margin-left: 15px;  
+        } 
+        
+        
+        .titsec {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color:rgb(68, 4, 77);
+            width: 100%;
+            background-color:#ffc046;
+            padding-bottom: 5px;
+            
+            margin-bottom: 30px;
+            
+            
+        }
+        .titart {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            color:#ffc046;
+            width: 90%;
+            background-color:rgb(99,42,113,0.9);
+            padding-bottom: 1px;
+            margin-bottom: 30px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: 5px;
+            margin-right: 55px;
+            margin-bottom: 5px;
+            
+        }
+        .titasi {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            color:#ffffff;
+        }
+        #header {
+            font-family: Arial, Helvetica, sans-serif;
+            color:#6668d0;
+            width: 100%;
+            padding-bottom: 5px;
+            margin-bottom: 30px;
+        }
+        .texto {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            text-align: justify;
+            color:#f5edfa;
+            
+            color:#00000c;
+            background:rgb(224,189,231,0.2);
+            width: 100%;
+           
+        }
+        #nav {
+            /*float: left; esto no está haciendo nada*/
+            width: 100%;
+            background:#af0f0f;
+            font-size: 26px;
+        }
+        
+        article {
+            float: left;
+            font-size: 16px;
+            width: 90%;
+            background-color:#f8d38f;
+            text-align: justify;
+            margin-left:15px;
+            
+        } 
+
+        aside {
+            float: right;
+            width: 30%;
+            background-image: url(img/hemisferic2.jpg);
+            background-size: cover;/*significa foto entera*/
+            
+            
+        }
+        #sidebar {
+            float: right;
+            width: 45%;
+            background: #6668d0;
+            margin-left: auto;
+            margin-right: 15px;
+        }
+        
+        #footer {
+            clear: both;
+            background: #6668d0;
+            color:#ffffff;
+            width: 100%;
+            font-size: 26px;
+        }
+        #imagen{
+            width:40px;
+            height:40px;
+        }
+        h2 {
+                border: 3px solid yellow;
+            } 
+        h3 {
+            color:#ffffff;
+            background-color:#6668d0;
+       } 
+       footer {
+                clear: both;
+                background-color: #D8D8D8;
+                overflow: hidden;
+                font-size: 18px;
+                padding: 20px;
+                opacity: 0.8;
+                background-image: url(img/medusa1.jpg);
+			    background-repeat: repeat;
+			    background-position: right, top;
+            }
+    </style>
+</head>
+<h1>HEADER HTML5</h1>
+<nav><ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Quiénes somos</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Galería imágenes</a></li>
+    <li><a href="#">Contacto</a></li>
+</ul></nav>
+<body>
+    
+    <section>
+        <h3 class="titsec">Sección1</h3>
+        <p class="texto">Donec commodo malesuada velit, eu laoreet nisl egestas venenatis. Curabitur tincidunt efficitur arcu. Cras non velit vestibulum, lacinia lectus quis, commodo lorem. Proin fermentum dui in tellus sodales, a euismod libero consectetur. Cras nec mi diam. In vitae arcu non diam mollis porttitor. Sed sodales risus sit amet condimentum malesuada. Sed tincidunt nec sem ut iaculis. Aliquam ut luctus lectus.</p>
+        <article class="titart">Artículo1"
+            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales massa id justo egestas volutpat. </p>
+        </article>
+        <article class="titart">Artículo2"
+            <p class="texto">Phasellus et enim hendrerit, sagittis ex vel, consequat enim. Proin lorem tellus, commodo vitae imperdiet vitae, faucibus at felis.</p>
+        </article>
+    </section>
+    <aside class="titasi">publicidad
+        <p class="texto">Este espacio está reservado al ocio</p>
+        <p class="texto">Quisque nunc lacus, blandit ut arcu fringilla, varius ultricies est. Cras tincidunt erat id dui ultricies, ultrices congue purus mollis. Sed euismod ex pharetra ante maximus sodales. Cras dignissim malesuada dolor vehicula pulvinar. Nam ac porttitor libero. Aliquam et justo eget massa gravida ultricies a quis augue. Mauris quis pellentesque diam. Fusce felis tortor, venenatis et ligula at, vehicula dictum turpis. Nullam sit amet sollicitudin ante. Nunc id ipsum lacinia, consectetur diam at, imperdiet metus.</p>
+    </aside>
+    <footer>
+        <p>Síguenos en:</p>
+        <ul>
+        <a href="https://www.facebook.com/" target="_blank"><img id="imagen" src="img/facebook.png" alt="Facebook"></a>
+		<a href="https://twitter.com/" target="_blank"><img id="imagen" src="img/twitter.png" alt="Twitter"></a>
+		<a href="https://www.instagram.com" target="_blank"><img id="imagen" src="img/instagram.png" alt="Instagram"></a>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--esta es la version sin javascript con el hover en la imagen-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t2pr3cgr</title>
+    <style>
+       .imgbox {
+        float: left;
+        text-align: center;
+        width: 120px;
+        border: 1px solid gray;
+        margin: 4px;
+        padding: 6px;
+        box-shadow: 15px 15px 30px rgba(79, 250, 73, 0.685);
+        width: 30%;
+        
+    }
+
+    button {
+        width: 100%;
+    }
+    .img1:hover{
+        display:none;
+        width: 0px;
+
+    }
+    .img2:hover{
+        visibility:hidden;
+    }
+    
+    
+</style>
+</head>
+<body>
+  <h1>Tema 2 - práctica 3.b- Cristina</h1>
+<h3>Difference between display:none and visiblity: hidden</h3>
+<p><strong>visibility:hidden</strong> hides the element, but it still takes up space in the layout.</p>
+<p><strong>display:none</strong> removes the element from the document. It does not take up any space.</p>
+
+<div class="imgbox" id="imgbox1">Box 1<br>
+  <img class="img1" src="img/img_5terre.jpg" alt="Italy" style="width:100%">
+  <button onclick="removeElement()">Remove</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Box 2<br>
+  <img class="img2" src="img/img_lights.jpg" alt="Lights" style="width:100%">
+  <button onclick="changeVisibility()">Hide</button>
+</div>
+
+<div class="imgbox">Box 3<br>
+  <img class="img3"src="img/img_forest.jpg" alt="Forest" style="width:100%">
+  <button onclick="resetElement()">Reset All</button>
+</div>
+
+
+
+
+</body>
+</html>

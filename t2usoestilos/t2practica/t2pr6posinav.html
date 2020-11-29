@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav cgr</title>
+    <style>
+        a{
+            color:rgb(3, 65, 16);
+            text-decoration: none;
+            margin-bottom: 10px;
+           
+
+  
+            
+        }
+        a:hover{
+            background-color: rgb(167, 194, 156);
+            
+            
+        }
+        .divppal{
+            width: 1000px;
+            height: 80px;
+            background-color: rgb(177, 247, 200);
+            color:rgb(14, 88, 17);
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid rgb(1, 27, 4);
+            margin-bottom: 80px;
+      
+    }
+        .div1{
+            width: 150px;
+            height: 35px;
+            background-color: rgb(86, 190, 121);
+            color:rgb(2, 46, 17);
+            border: 2px solid rgb(3, 46, 8);
+            text-align: center;
+            margin-left: 5px;
+            padding-left: 5px;
+            float: left;
+            padding-top: 5px;
+            position:relative;
+            display:inline;
+           
+    }
+        .div2{
+            
+            margin-top: 10px;
+            background-color: #7abe9a;
+            font-size: 15px;
+            position: absolute;
+            display: none;
+            left: 0;
+           
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+            min-width: 160px;
+           
+           
+    }
+
+   
+
+    .div1:hover{
+            color: rgb(86, 190, 121);
+            background-color:rgb(247, 250, 103);
+            display: block;
+            cursor:cell;
+            
+
+    }
+
+    
+
+    .div1:hover .div2{
+            display: block;
+            
+            
+          
+
+
+    }
+
+    .btn {
+            width: 80%;
+            padding: 16px;
+            font-size: 16px;
+            width: 160px;
+           
+        }
+    
+    
+</style>
+</head>
+<body>
+    <h1>Tema 2 - práctica 6 position - Cristina</h1>
+    
+    <h2>Menú de opciones</h2>
+    <nav>
+        <div class=divppal>  
+            <ul>  
+              
+            <div class=div1>
+                
+                <a href="https://www.facebook.com/" target="_blank">link1</a>
+           </div>
+            <div class=div1>
+                
+                <a href="https://www.facebook.com/" target="_blank">link2<del></del></a>
+            </div>
+            <div class=div1>
+               
+                <a href="https://www.facebook.com/" target="_blank">link3</a>
+                    <div class=div2>
+                      <button class=btn> 
+                        <a  href="https://material.io/resources/color/#!/?view.left=0&view.right=0">Color_material</a>
+                        <a  href="https://developers.google.com/fonts">Fuentes_Google</a>
+                        <a  href="https://material.io/resources/icons/?style=baseline">Iconos_material</a>
+                      </button>
+                    </div>
+           </div>
+             
+            </ul> 
+         </div>
+    </nav>
+</body>
+</html>
