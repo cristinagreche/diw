@@ -1,0 +1,263 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.ciudad{
+    font-size: 30px;
+}
+.fecha{
+    font-size: 25px;
+}
+.pronostico{
+    font-size: 20px;
+}
+.info{
+    display: inline;
+    
+}
+/* ************** ICONOS *************** */
+.icono {
+    /* estas 5 siguientes van juntas
+    una imagen sin texto sólo se ve con un w + h
+    para tener w+h tiene que estar display:inline-block
+    para que lo ss a d:i-b vaya arriba tiene
+    que haber un vertical-align:top*/
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;*/
+}
+.icono.sol{
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fsunny.png?v=1588942701577")
+}
+.icono.negro{
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fcloudy.png?v=1588942708821")
+}
+.icono.tormenta{
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fthunderstorms.png?v=1588942705076")
+}
+.icono.nubes{
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fpartly_cloudy.png?v=1588942697934")
+}
+.icono.lluvia{
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Frain_s_cloudy.png?v=1588942692675");
+}
+
+/* ***************************************** */
+
+
+/*probar con display:inline-block porque float:left si tengo algo grande me tira el resto abajo*/
+.info_izq{ 
+    width: 50%;
+    float: left;
+    
+}
+.info_dcha{
+    width: 50%;
+    float: left;
+    padding-left: 5px;
+    
+}
+.info_icon{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url("https://cdn.glitch.com/837e1dde-8f7c-4df4-8d84-9200a53f45cc%2Fthunderstorms.png?v=1588942705076");
+    background-repeat: no-repeat;
+}
+/*después de display:inline-block 
+si se baja lo siguiente -> vertical-align:top; */
+.info_grado{
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+.info_unidad{
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+   
+}
+.info_datos{
+    font-size: 8px;
+   
+}
+/* ************** zona por día móvil **************** */
+
+@media screen and (max-width:400px){
+.diario{
+    clear: both;
+    font-style: unset; /*negrita*/
+    font-size: 15px;
+    color: rgb(99, 22, 35);
+}
+.dia{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid rgb(179, 179, 179);
+    margin-bottom: 2px;
+}
+
+.dia_semana{
+    width: 70px;
+    /*display: block;*/
+    font-size: 15px;
+    font-style: unset;
+    float: left;
+}
+
+.temperatura{
+    display: inline-block;
+    margin-left: 60px;
+    
+}
+.t_alta{
+    font-size: 15px;
+    
+}
+.t_baja{
+   
+    font-size: 15px;
+}
+.polen{
+    display: inline-block;
+    margin-left: 60px;
+}
+.p_alto{
+    float: left;
+    
+}
+.p_bajo{
+
+    font-size: 15px;
+}
+}
+/* ************** zona por día tablet **************** */
+@media screen and (max-width:900px){
+    .diario{
+        clear: both;
+        font-style: unset; /*negrita*/
+        font-size: 15px;
+        color: rgb(99, 22, 35);
+    }
+    .dia{
+        width: 100%;
+        font: size 15px;
+        padding: 10px;
+        display: inline-block;
+        border: 1px solid rgb(179, 179, 179);
+        margin-bottom: 2px;
+    }
+    
+    .dia_semana{
+        width: 70px;
+        /*display: block;*/
+        font-size: 15px;
+        font-style: unset;
+        float: left;
+    }
+    
+    .temperatura{
+        display: inline-block;
+        margin-left: 60px;
+        vertical-align: middle;
+        
+    }
+    .t_alta{
+        display: inline-block;
+       
+        font-size: 15px;
+        
+    }
+    .t_baja{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .polen{
+        display: inline-block;
+        margin-left: 60px;
+        vertical-align: middle;
+    }
+    .p_alto{
+        display: inline-block;
+       
+        font-size: 15px;
+        
+    }
+    .p_bajo{
+        display: inline-block;
+        font-size: 15px;
+    }
+    }
+
+/* ************** zona por día sobremesa **************** */
+@media screen and (min-width:900px){
+    .diario{
+        clear: both;
+        width: 100%;
+        font-style: unset; /*negrita*/
+        font-size: 15px;
+        color: rgb(99, 22, 35);
+        box-shadow: 2px 2px 10px black;
+        display: inline-block;
+    }
+    .dia{
+        width: 13.7%;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 15px;
+        padding: 10px;
+        display: inline-block;
+       
+    }
+   
+    .dia_semana{
+        display: block;
+        font-size: 15px;
+        font-style: unset;
+    }
+    
+    .temperatura{
+        
+        display: inline;
+        margin-left: 55px;
+        
+    }
+    .t_alta{
+        font-size: 15px;
+        float: left;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    .t_baja{
+        float: left;
+        font-size: 15px;
+    }
+    .polen{
+        clear: both;
+        
+    }
+    .p_alto{
+        float: left;
+        margin-left: 26px;
+        margin-right: 10px;
+        
+    }
+    .p_bajo{
+        float: left;
+        font-size: 15px;
+    }
+    }

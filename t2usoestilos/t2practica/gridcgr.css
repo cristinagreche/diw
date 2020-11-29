@@ -1,0 +1,293 @@
+[class*=col]{
+    float:left;
+    padding:25px; 
+    right:20px;
+}
+/*la propiedad box-sizing sirve para que cuando doy un ancho entre én él el padding*/
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*para sobremesa*/
+@media screen and (min-width:900px){
+.col-l-1{
+    width: 8.33%;
+}
+.col-l-2{
+    width: 16.66%;
+}
+.col-l-3{
+    width: 25%;
+}
+.col-l-4{
+    width: 33.33%;
+}
+.col-l-5{
+    width: 41.66%;
+}
+.col-l-6{
+    width: 50%;
+}
+.col-l-7{
+    width: 58.33%;
+}
+.col-l-8{
+    width: 66.66%;
+}
+.col-l-9{
+    width: 75%;
+}
+.col-l-10{
+    width: 83.33%;
+}
+.col-l-11{
+    width: 91.66%;
+}
+.col-l-12{
+    width: 100%;
+}
+}
+/*para tablet horizontal*/
+@media screen and (max-width:900px){
+    .col-m-1{
+        width: 8.33%;
+    }
+    .col-m-2{
+        width: 16.66%;
+    }
+    .col-m-3{
+        width: 25%;
+    }
+    .col-m-4{
+        width: 33.33%;
+    }
+    .col-m-5{
+        width: 41.66%;
+    }
+    .col-m-6{
+        width: 50%;
+    }
+    .col-m-7{
+        width: 58.33%;
+    }
+    .col-m-8{
+        width: 66.66%;
+    }
+    .col-m-9{
+        width: 75%;
+    }
+    .col-m-10{
+        width: 83.33%;
+    }
+    .col-m-11{
+        width: 91.66%;
+    }
+    .col-m-12{
+        width: 100%;
+    }
+    }
+
+/*para tablet vertical*/
+@media screen and (max-width:720px){
+    .col-mv-1{
+        width: 8.33%;
+    }
+    .col-mv-2{
+        width: 16.66%;
+    }
+    .col-mv-3{
+        width: 25%;
+    }
+    .col-mv-4{
+        width: 33.33%;
+    }
+    .col-mv-5{
+        width: 41.66%;
+    }
+    .col-mv-6{
+        width: 50%;
+    }
+    .col-mv-7{
+        width: 58.33%;
+    }
+    .col-m-v8{
+        width: 66.66%;
+    }
+    .col-mv-9{
+        width: 75%;
+    }
+    .col-mv-10{
+        width: 83.33%;
+    }
+    .col-mv-11{
+        width: 91.66%;
+    }
+    .col-mv-12{
+        width: 100%;
+    }
+    }
+
+/*para móvil*/
+@media screen and (max-width:600px){
+    .col-s-1{
+        width: 8.33%;
+    }
+    .col-s-2{
+        width: 16.66%;
+    }
+    .col-s-3{
+        width: 25%;
+    }
+    .col-s-4{
+        width: 33.33%;
+    }
+    .col-s-5{
+        width: 41.66%;
+    }
+    .col-s-6{
+        width: 50%;
+    }
+    .col-s-7{
+        width: 58.33%;
+    }
+    .col-s-8{
+        width: 66.66%;
+    }
+    .col-s-9{
+        width: 75%;
+    }
+    .col-s-10{
+        width: 83.33%;
+    }
+    .col-s-11{
+        width: 91.66%;
+    }
+    .col-s-12{
+        width: 100%;
+    }
+   
+    }
+
+main{
+    width: auto;
+    height: 350px;
+}
+.menu{
+    border-radius:20%;
+    padding:0px;
+}
+/* no sé porqué, pero menu ul tiene que estar así para que se vean las option*/
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90px;
+    text-align: center;
+    border: 5px solid white;
+}
+.menu li{
+    background-color: rgb(216, 229, 240);
+    box-shadow: 3px 3px 10px rgba(32, 28, 44, 0.863);
+}
+.menu li:hover {
+    background-color: rgb(41, 141, 235);
+}
+.div1{
+    background-image: linear-gradient(rgb(243, 181, 179), rgb(212, 79, 70), rgb(235, 70, 41));
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
+    padding-right: 10px;
+}
+
+.div2{
+    background-image: linear-gradient(rgb(179, 243, 243), rgb(70, 179, 212), rgb(41, 141, 235));
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
+    right: 10px;
+}
+.div3{
+    background-image: linear-gradient(rgb(233, 243, 179), rgb(212, 186, 70), rgb(250, 219, 44));
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
+    right: 10px;
+    /*para Nala
+    background-image: url("img/nala.jpg");
+    background-size: 90%;
+    color: white;*/
+}
+.div4{
+    background-image: linear-gradient(rgb(179, 243, 243), rgb(70, 179, 212), rgb(41, 141, 235));
+    background-image: url("img/bicileta.jpg");
+    background-size: 120%;
+    color: white;
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
+}
+.div5{
+    clear: both;
+    background-image: linear-gradient(rgb(190, 243, 179), rgb(82, 212, 70), rgb(41, 235, 57));
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
+}
+.div6{
+    background-image: linear-gradient(rgb(245, 218, 241), rgb(226, 133, 211), rgb(247, 81, 225));
+    border: 5px solid rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
+    height: 600px;
+}
+.div7{
+    width: 100px;
+    height: 20px;
+    background-image: linear-gradient(rgb(245, 218, 241), rgb(226, 133, 211), rgb(247, 81, 225));
+    border: 2px outset rgb(255, 255, 255);
+    /* un outset queda mal redondeado border-radius: 40%;*/
+    box-shadow: 3px 3px 15px rgba(32, 28, 44, 0.863);
+    display: inline;
+    font-size: 30px;
+    /*el margin-right es para separar los botones*/
+    margin-right: 60px;
+    text-align: center;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+.a{
+    display: block;
+    background-color: ghostwhite;
+    text-align: center;
+}
+.a:hover {
+    background-color: rgb(65, 4, 4);
+    color: white;
+    
+}
+.contenedor {
+    position: relative;
+    display: inline-block
+}
+.menuhamb {
+    position: absolute;
+    top: 0px;
+    /*hemos puesto top 0 para que tape el icono de la hamburguesa al visualizarse*/
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    display: none
+}
+.contenedor:hover .menuhamb {
+    display: block;
+}
+header:before{
+    content:"";
+    clear: both;
+}

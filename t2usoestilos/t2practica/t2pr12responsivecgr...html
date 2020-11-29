@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>t2pr12responsive</title>
+    <link rel="stylesheet" href="gridcgr.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header class="div1 col-l-12 col-m-12 col-mv-12 col-s-12">
+            <p>hola qué tal</p>
+            <p>aquí me falta hacer el hidden para móvil</p>
+            <p>y también me falta poner en forma semántica nav, article, aside</p>
+            <div class="contenedor">
+                <button>
+                    <span  class="material-icons" onclick="openNav();">
+                        menu
+                    </span>
+                    <div class="menuhamb">
+                        <a class="a" href="https://material.io/resources/icons/?style=baseline">material design</a>
+                        <a class="a"href="https://icons.getbootstrap.com/">bootstrap</a>
+                        <a class="a"href="https://www.w3schools.com/html/">w3school</a>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <main class="div6">
+            <div class="div2 col-l-3 col-m-4 col-mv-6 col-s-12">
+                <p><b>Duda nº 1</b>-> por qué para tamaños grandes me sale opción en 2 líneas?.</p>
+                <p>en .menu ul hay que poner list-style-type:none margin0 y padding0</p>
+                <div id="myNav" class="col-l-3 col-m-4 col-mv-6 col-s-12 menu">
+                    <ul>
+                        <li>Opción 1</li>
+                        <li>Opción 2</li>
+                        <li>Opción 3</li>
+                        <li>Opción 4</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div3 col-l-7 col-m-8 col-mv-6 col-s-12">
+                <p>estamos en el main del main, es decir en la parte del medio del main. La más importante, la que va a quedar en el centro de la web según la vemos y donde vamos a escribir lo que queramos transmitir o poner la mejor imagen</p>
+                <p><b>Duda nº 2</b>-> por qué me sale el div6 que se aplica al main, arriba desde el header?</p>
+                <p>los siguientes enlacees te llevan a las propiedades que pueden tener cada etiqueta html y a las características css</p>
+                <p>si quiero separar los botones es con margin-right</p>
+                <p><b>Duda nº 4</b>->con el display inline me hace caso omiso al width y al height</p>
+                <div class=div7>
+                    <a href="https://www.w3schools.com/tags/default.asp">html</a>
+                </div>
+                <div class=div7>
+                    <a href="https://www.w3schools.com/cssref/">css</a>
+                </div>
+            </div>
+            <div class="div4 col-l-2 col-m-12 col-mv-12 col-s-12">
+                <p>y esta es la parte derecha del main si estamos en sobremesa. Aquí pondremos asuntos accesorios. <b>Duda nº 3</b> -> Pero yo quiero que la imagen de abajo también sea responsive</p>
+            </div>
+        </main>
+        <footer>
+            <div class="div5 col-l-12 col-m-12 col-mv-12 col-s-12">
+                <p>y aquí como es el footer queremos que ocupe el 100% de la pantalla igual que el header, y es un espacio que dejaremos reservado a enlaces con redes sociales, o algún que otro enlace interesante, además del conocenos, etc.</p>
+                
+            </div>
+        </footer>
+    </div>
+</body>
+<!-- este script está copiado directamente. cualquier día de ésto lo entiendo-->
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.display = "block";
+    }
+</script>
+</html>
